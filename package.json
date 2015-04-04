@@ -1,0 +1,49 @@
+{
+  "name": "bus",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pazguille/bus.git"
+  },
+  "description": "A JavaScript Event Bus written in ES6.",
+  "author": {
+    "name": "Guille Paz",
+    "email": "guille87paz@gmail.com"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "es5": "node babel.js",
+    "hint": "jshint index.js",
+    "dist": "node browserify.js",
+    "prepublish": "npm run es5"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "loose": [
+            "es6.modules"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "babelify": "^6.0.0",
+    "emitter": "git+https://github.com/pazguille/emitter.git"
+  },
+  "devDependencies": {
+    "babel": "^5.0.2",
+    "better-assert": "1.0.2",
+    "browserify": "^9.0.7",
+    "jshint": "2.6.3",
+    "mocha": "2.1.0"
+  },
+  "main": "index.js",
+  "keywords": [
+    "events",
+    "emitter",
+    "bus"
+  ],
+  "license": "MIT"
+}
