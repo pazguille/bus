@@ -11,7 +11,7 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "hint": "jshint index.js",
+    "hint": "jshint ./src/index.js",
     "compile": "node babel.js",
     "browser": "node browserify.js",
     "prepublish": "npm run compile"
