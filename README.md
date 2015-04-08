@@ -49,7 +49,11 @@ bus.emit('live', 'data1', 'data2');
 
 ## npm-scripts
 ```
-$ npm run dist
+$ npm run compile
+```
+
+```
+$ npm run browser
 ```
 
 ```
