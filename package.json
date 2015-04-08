@@ -11,29 +11,17 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "es5": "node babel.js",
     "hint": "jshint index.js",
-    "dist": "node browserify.js",
-    "prepublish": "npm run es5"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "loose": [
-            "es6.modules"
-          ]
-        }
-      ]
-    ]
+    "compile": "node babel.js",
+    "browser": "node browserify.js",
+    "prepublish": "npm run compile"
   },
   "dependencies": {
-    "babelify": "^6.0.0",
     "emitter": "git+https://github.com/pazguille/emitter.git"
   },
   "devDependencies": {
     "babel": "^5.0.2",
+    "babelify": "^6.0.0",
     "better-assert": "1.0.2",
     "browserify": "^9.0.7",
     "jshint": "2.6.3",

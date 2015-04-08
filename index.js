@@ -4,6 +4,11 @@
 import Emitter from 'emitter';
 
 /**
+ * Bus
+ */
+const bus = new Emitter();
+
+/**
  * Exports bus
  */
-export default new Emitter();
+export default bus;

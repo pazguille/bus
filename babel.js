@@ -9,14 +9,14 @@ var babel = require('babel');
 /**
  * Create directories
  */
-if (!fs.existsSync('./es5')) {
-  fs.mkdirSync('./es5');
+if (!fs.existsSync('./dist')) {
+  fs.mkdirSync('./dist');
 }
 
 /**
  * Babel
  */
-babel.transformFile('index.js', {'loose': ['es6.modules']}, function (err, result) {
+babel.transformFile('./src/index.js', {'loose': ['es6.modules']}, function (err, result) {
   if (err) { console.log('Error : ' + err.message); }
-  fs.writeFileSync('./es5/index.js', result.code);
+  fs.writeFileSync('./dist/index.js', result.code);
 });

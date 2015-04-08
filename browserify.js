@@ -9,16 +9,15 @@ var browserify = require('browserify');
 /**
  * Create directories
  */
-if (!fs.existsSync('./dist')) {
-  fs.mkdirSync('./dist');
+if (!fs.existsSync('./browser')) {
+  fs.mkdirSync('./browser');
 }
 
 /**
  * Browserify
  */
-browserify({'debug': true, 'standalone': 'bus'})
-  .transform('babelify', {'loose': ['es6.modules']})
-  .require('./index.js', {'entry': true})
+browserify({ 'entries': './src/index.js', 'standalone': 'bus', 'debug': true })
+  .transform('babelify')
   .bundle()
   .on('error', function (err) { console.log('Error : ' + err.message); })
-  .pipe(fs.createWriteStream('dist/bus.js'));
+  .pipe(fs.createWriteStream('browser/bus.js'));

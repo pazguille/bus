@@ -2,16 +2,9 @@
 
 > A JavaScript Event Bus written in ES6.
 
-## ES6 Usage
+## Usage
 ```js
 import bus from 'bus';
-
-bus.emit('finish');
-```
-
-## ES5 Usage
-```js
-var bus = require('bus/es5');
 
 bus.emit('finish');
 ```
@@ -55,10 +48,6 @@ bus.emit('live', 'data1', 'data2');
 ```
 
 ## npm-scripts
-```
-$ npm run es5
-```
-
 ```
 $ npm run dist
 ```
