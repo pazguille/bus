@@ -20,4 +20,4 @@ browserify({ 'entries': './src/index.js', 'standalone': 'bus', 'debug': true })
   .transform('babelify', {'loose': ['es6.modules']})
   .bundle()
   .on('error', function (err) { console.log('Error : ' + err.message); })
-  .pipe(fs.createWriteStream('browser/bus.js'));
+  .pipe(fs.createWriteStream('browser/index.js'));
