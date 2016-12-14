@@ -20,12 +20,12 @@
     "emitter": "git+https://github.com/pazguille/emitter.git"
   },
   "devDependencies": {
-    "babel": "^5.0.2",
-    "babelify": "^6.0.0",
+    "babel": "^6.5.2",
+    "babelify": "^7.3.0",
     "better-assert": "1.0.2",
-    "browserify": "^9.0.7",
-    "jshint": "2.6.3",
-    "mocha": "2.1.0"
+    "browserify": "^13.1.1",
+    "jshint": "2.9.4",
+    "mocha": "3.2.0"
   },
   "main": "./dist/index.js",
   "keywords": [
