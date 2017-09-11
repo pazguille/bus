@@ -25,7 +25,7 @@
     "better-assert": "1.0.2",
     "browserify": "^14.1.0",
     "jshint": "2.9.4",
-    "mocha": "3.2.0"
+    "mocha": "3.5.2"
   },
   "main": "./dist/index.js",
   "keywords": [
