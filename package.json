@@ -23,7 +23,7 @@
     "babel": "^6.5.2",
     "babelify": "^7.3.0",
     "better-assert": "1.0.2",
-    "browserify": "^14.1.0",
+    "browserify": "^16.3.0",
     "jshint": "2.9.4",
     "mocha": "3.2.0"
   },
